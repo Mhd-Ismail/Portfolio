@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.headfont {
+  font-family: "Hind", sans-serif;
+  font-size: 40px;
+  padding-bottom: 50px;
+  margin: 0;
+  color: #131313;
+}
+.titlefont {
+  font-family: "loto", sans-serif;
+  font-size: 18px;
+  color: #131313;
+  margin-bottom: 0;
+}
+.bodyfont {
+  font-family: "loto", sans-serif;
+  font-size: 16px;
+  color: #181a1b;
+}
+.padtop {
+  padding-top: 100px;
+}
+.padbottom {
+  padding-bottom: 100px;
+}
+
+/* Navbar */
+.nav-item {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  padding: 0px 15px;
+  margin: 0 5px;
+  transition-duration: 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+  border-radius: 20px;
+}
+.nav-item:hover {
+  background-color: #48b14d;
+  cursor: pointer;
+}
+
+/* Home */
+.Home-text {
+  background-image: url(../Images/bg1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.blacklayer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.profile-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile-pic img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+.profile-pic h1 {
+  font-size: 55px;
+  font-family: "Hind", sans-serif;
+  margin-top: 30px;
+  color: #fff;
+}
+.profile-pic h3 {
+  font-size: 24px;
+  font-family: "loto", sans-serif;
+  color: rgba(255, 255, 255, 0.66);
+}
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  animation: floating 3s ease infinite;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+/* About */
+.about h2 {
+  font-family: "Hind", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about h3 {
+  margin-bottom: 20px;
+}
+.resumeBtn {
+  background-color: #131313;
+  font-family: "loto", sans-serif;
+  font-size: 16px;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+}
+.resumeBtn {
+  color: #fff;
+}
+.resumeBtn:hover {
+  background-color: #48b14d;
+}
+
+/* my skills */
+.my-skills {
+  background-color: #f2f2f2;
+}
+.my-skills h1 {
+  color: #131313;
+}
+
+.row .content {
+  transition: transform 0.2s;
+}
+.row .content:hover {
+  transform: scale(1.2);
+}
+
+/* Portfolio */
+.work-items {
+  height: 220px;
+  position: relative;
+  box-shadow: 13px 13px 8px -10px rgb(0 0 0 / 20%);
+}
+.work-items img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.container .overlay .info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.container .overlay {
+  transform: scale(0);
+  transition: 0.3s;
+}
+.container .work-items:hover .overlay {
+  transform: scale(1);
+}
+.siteLink a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px !important;
+}
+.info h6 {
+  font-family: "loto", sans-serif;
+}
+
+/* Contact */
+.contactIcon {
+  font-size: 25px;
+}
+
+/* footerSocial */
+.footerSocial a {
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+.footerSocial a:hover {
+  color: #48b14d;
+}
+.footerSocial i {
+  padding: 10px;
+}
+
+/* modal */
+.modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999999;
+  transition: visibility 0s, opacity 0.5s;
+}
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalIMG{
+  width: 60%;
+}
+
+.modalIMG >img{
+  width: 55%;
+}
+
+.closebtn{
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  cursor: pointer;
+}
+.closebtn i{
+text-decoration: none;
+font-size: 30px;
+color: white;
+}
+
+.downloadbtn{
+    position: absolute;
+  top: 100px;
+  right: 25px;
+}
+
+.downloadbtn i{
+text-decoration: none;
+font-size: 30px;
+color: white;
+margin-top: 20px;
+}
